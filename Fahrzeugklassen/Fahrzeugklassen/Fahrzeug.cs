@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fahrzeugklassen
 {
-    internal class Fahrzeug
+    public class Fahrzeug
     {
         public string Hersteller { get; set; }
         public int Reifenanzahl { get; set; }
@@ -19,6 +19,11 @@ namespace Fahrzeugklassen
             Reifenanzahl = reifenanzahl;
             Maximalgeschwindigkeit = maximalgeschwindigkeit;
             Preis = preis;
+        }
+
+        public Fahrzeug()
+        {
+
         }
 
         public static void FrageNachFahrzeugdaten()
@@ -36,42 +41,41 @@ namespace Fahrzeugklassen
 
         public static void FahrzeugdatenInListe(string hersteller, int reifenanzahl, int maximalgeschwindigkeit, float preis)
         {
-
+            
         }
 
-        public static void PrintFahrzeugInformation()
-        {
-            Console.WriteLine($"Das Fahrzeug hat den Hersteller {Hersteller} , die Reifenzahl {Reifenanzahl} , die Maximalgeschwindigkeit {Maximalgeschwindigkeit} und kostet {Preis} €");
-        }
+        //public static void PrintFahrzeugInformation()
+        //{
+        //    Console.WriteLine($"Das Fahrzeug hat den Hersteller {Fahrzeug.Hersteller} , die Reifenzahl {Reifenanzahl} , die Maximalgeschwindigkeit {Maximalgeschwindigkeit} und kostet {Preis} €");
+        //}
 
-        public static void MotorStarten()
-        {
-            if 
-            Console.WriteLine("Der Motor startet");
-            else
-            Console.WriteLine("Der Motor ist schon an und startet nicht");
+        //public static void MotorStarten()
+        //{
+        //    //if 
+        //    //Console.WriteLine("Der Motor startet");
+        //    //else
+        //    //Console.WriteLine("Der Motor ist schon an und startet nicht");
 
-        }
-        public static void Beschleunigen()
-        {
+        //}
+        //public static void Beschleunigen()
+        //{
 
-        }
-        public static void Bremsen()
-        {
+        //}
+        //public static void Bremsen()
+        //{
 
-        }
-        public static void Blinken()
-        {
+        //}
+        //public static void Blinken()
+        //{
 
-        }
-        public static void LichtAnschalten()
-        {
+        //}
+        //public static void LichtAnschalten()
+        //{
 
-        }
-        public static void LichtAusschalten()
-        {
+        //}
+        //public static void LichtAusschalten()
+        //{
 
-        }
-
+        //}
     }
 }
